@@ -26,3 +26,18 @@ open ssh success like this:
 [+] cloud token: yaELY8i123456789n9QXOtYw=
 [+] Success: ssh port is 22
 ```
+
+# flash openwrt (HC5661A)
+
+upload [uboot](./openwrt/breed-mt7628-hiwifi-hc5661a.bin) and flash
+
+```
+mtd write -r breed-mt7628-hiwifi-hc5661a.bin u-boot
+```
+
+rebooting...hold reset 3s...
+
+breed Web: 192.168.1.1
+
+firmware update -> firmware -> [openwrt-sysupgrade](./openwrt/openwrt-ramips-mt76x8-hiwifi_hc5661a-squashfs-sysupgrade.bin) -> enjoy!
+
